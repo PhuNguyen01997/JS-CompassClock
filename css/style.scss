@@ -6,22 +6,41 @@ html{
     max-width: 76.8rem;
     max-height: 76.8rem;
     margin: 0 auto;
-    &__second{
-        background-color: orange;
-        width: 76.8rem;
-        height: 76.8rem;
-        margin: 0 auto;
-        position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76.8rem;
+    height: 76.8rem;
+    &__container{
         display: flex;
         align-items: center;
+        margin: 0 auto;
+        position: absolute;
+        // background-color: orange;
+        &--second{
+            width: 76.8rem;
+            height: 76.8rem;
+        } 
+        &--minute{
+            width: 71rem;
+            height: 71rem;
+        }
+        &--hour{
+            width: 65rem;
+            height: 65rem;
+            background-color: aqua;
+        }
     }
-    &__second-item{
-        width: 100%;
+    &__item{
         text-align: right;
         font-size: 2rem;
         display: block;
         position: absolute;
+        width: 100%;
         // transition: 1s; // I add transition in javascript
+        &--second{
+            width: 100%;
+        }
     }
 }
 // @for $i from 0 through 59 {
