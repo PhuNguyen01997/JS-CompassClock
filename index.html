@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="" />
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap 4 CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--Font Answer Icon 5-->
+    <script src="https://kit.fontawesome.com/5ca78cb473.js" crossorigin="anonymous"></script>
+
+    <title>Compass Clock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="compass-clock">
+        <div class="compass-clock__second">
+            <!-- <span class="compass-clock__second-item" id="second-0">0</span>
+            <span class="compass-clock__second-item" id="second-1">1</span>
+            <span class="compass-clock__second-item" id="second-2">2</span>
+            <span class="compass-clock__second-item" id="second-3">3</span>
+            <span class="compass-clock__second-item" id="second-4">4</span>
+            <span class="compass-clock__second-item" id="second-5">5</span>
+            <span class="compass-clock__second-item" id="second-6">6</span>
+            <span class="compass-clock__second-item" id="second-7">7</span>
+            <span class="compass-clock__second-item" id="second-8">8</span>
+            <span class="compass-clock__second-item" id="second-9">9</span>
+            <span class="compass-clock__second-item" id="second-10">10</span>
+            <span class="compass-clock__second-item" id="second-11">11</span>
+            <span class="compass-clock__second-item" id="second-12">12</span>
+            <span class="compass-clock__second-item" id="second-13">13</span>
+            <span class="compass-clock__second-item" id="second-14">14</span>
+            <span class="compass-clock__second-item" id="second-15">15</span>
+            <span class="compass-clock__second-item" id="second-16">16</span>
+            <span class="compass-clock__second-item" id="second-17">17</span>
+            <span class="compass-clock__second-item" id="second-18">18</span>
+            <span class="compass-clock__second-item" id="second-19">19</span>
+            <span class="compass-clock__second-item" id="second-20">20</span>
+            <span class="compass-clock__second-item" id="second-21">21</span>
+            <span class="compass-clock__second-item" id="second-22">22</span>
+            <span class="compass-clock__second-item" id="second-23">23</span>
+            <span class="compass-clock__second-item" id="second-24">24</span>
+            <span class="compass-clock__second-item" id="second-25">25</span>
+            <span class="compass-clock__second-item" id="second-26">26</span>
+            <span class="compass-clock__second-item" id="second-27">27</span>
+            <span class="compass-clock__second-item" id="second-28">28</span>
+            <span class="compass-clock__second-item" id="second-29">29</span>
+            <span class="compass-clock__second-item" id="second-30">30</span>
+            <span class="compass-clock__second-item" id="second-31">31</span>
+            <span class="compass-clock__second-item" id="second-32">32</span>
+            <span class="compass-clock__second-item" id="second-33">33</span>
+            <span class="compass-clock__second-item" id="second-34">34</span>
+            <span class="compass-clock__second-item" id="second-35">35</span>
+            <span class="compass-clock__second-item" id="second-36">36</span>
+            <span class="compass-clock__second-item" id="second-37">37</span>
+            <span class="compass-clock__second-item" id="second-38">38</span>
+            <span class="compass-clock__second-item" id="second-39">39</span>
+            <span class="compass-clock__second-item" id="second-40">40</span>
+            <span class="compass-clock__second-item" id="second-41">41</span>
+            <span class="compass-clock__second-item" id="second-42">42</span>
+            <span class="compass-clock__second-item" id="second-43">43</span>
+            <span class="compass-clock__second-item" id="second-44">44</span>
+            <span class="compass-clock__second-item" id="second-45">45</span>
+            <span class="compass-clock__second-item" id="second-46">46</span>
+            <span class="compass-clock__second-item" id="second-47">47</span>
+            <span class="compass-clock__second-item" id="second-48">48</span>
+            <span class="compass-clock__second-item" id="second-49">49</span>
+            <span class="compass-clock__second-item" id="second-50">50</span>
+            <span class="compass-clock__second-item" id="second-51">51</span>
+            <span class="compass-clock__second-item" id="second-52">52</span>
+            <span class="compass-clock__second-item" id="second-53">53</span>
+            <span class="compass-clock__second-item" id="second-54">54</span>
+            <span class="compass-clock__second-item" id="second-55">55</span>
+            <span class="compass-clock__second-item" id="second-56">56</span>
+            <span class="compass-clock__second-item" id="second-57">57</span>
+            <span class="compass-clock__second-item" id="second-58">58</span>
+            <span class="compass-clock__second-item" id="second-59">59</span> -->
+
+            <span class="compass-clock__second-item" id="second-0" data-value="0">0</span>
+            <span class="compass-clock__second-item" id="second-1" data-value="1">1</span>
+            <span class="compass-clock__second-item" id="second-2" data-value="2">2</span>
+            <span class="compass-clock__second-item" id="second-3" data-value="3">3</span>
+            <span class="compass-clock__second-item" id="second-4" data-value="4">4</span>
+            <span class="compass-clock__second-item" id="second-5" data-value="5">5</span>
+            <span class="compass-clock__second-item" id="second-6" data-value="6">6</span>
+            <span class="compass-clock__second-item" id="second-7" data-value="7">7</span>
+            <span class="compass-clock__second-item" id="second-8" data-value="8">8</span>
+            <span class="compass-clock__second-item" id="second-9" data-value="9">9</span>
+            <span class="compass-clock__second-item" id="second-10" data-value="10">10</span>
+            <span class="compass-clock__second-item" id="second-11" data-value="11">11</span>
+            <span class="compass-clock__second-item" id="second-12" data-value="12">12</span>
+            <span class="compass-clock__second-item" id="second-13" data-value="13">13</span>
+            <span class="compass-clock__second-item" id="second-14" data-value="14">14</span>
+            <span class="compass-clock__second-item" id="second-15" data-value="15">15</span>
+            <span class="compass-clock__second-item" id="second-16" data-value="16">16</span>
+            <span class="compass-clock__second-item" id="second-17" data-value="17">17</span>
+            <span class="compass-clock__second-item" id="second-18" data-value="18">18</span>
+            <span class="compass-clock__second-item" id="second-19" data-value="19">19</span>
+            <span class="compass-clock__second-item" id="second-20" data-value="20">20</span>
+            <span class="compass-clock__second-item" id="second-21" data-value="21">21</span>
+            <span class="compass-clock__second-item" id="second-22" data-value="22">22</span>
+            <span class="compass-clock__second-item" id="second-23" data-value="23">23</span>
+            <span class="compass-clock__second-item" id="second-24" data-value="24">24</span>
+            <span class="compass-clock__second-item" id="second-25" data-value="25">25</span>
+            <span class="compass-clock__second-item" id="second-26" data-value="26">26</span>
+            <span class="compass-clock__second-item" id="second-27" data-value="27">27</span>
+            <span class="compass-clock__second-item" id="second-28" data-value="28">28</span>
+            <span class="compass-clock__second-item" id="second-29" data-value="29">29</span>
+            <span class="compass-clock__second-item" id="second-30" data-value="30">30</span>
+            <span class="compass-clock__second-item" id="second-31" data-value="31">31</span>
+            <span class="compass-clock__second-item" id="second-32" data-value="32">32</span>
+            <span class="compass-clock__second-item" id="second-33" data-value="33">33</span>
+            <span class="compass-clock__second-item" id="second-34" data-value="34">34</span>
+            <span class="compass-clock__second-item" id="second-35" data-value="35">35</span>
+            <span class="compass-clock__second-item" id="second-36" data-value="36">36</span>
+            <span class="compass-clock__second-item" id="second-37" data-value="37">37</span>
+            <span class="compass-clock__second-item" id="second-38" data-value="38">38</span>
+            <span class="compass-clock__second-item" id="second-39" data-value="39">39</span>
+            <span class="compass-clock__second-item" id="second-40" data-value="40">40</span>
+            <span class="compass-clock__second-item" id="second-41" data-value="41">41</span>
+            <span class="compass-clock__second-item" id="second-42" data-value="42">42</span>
+            <span class="compass-clock__second-item" id="second-43" data-value="43">43</span>
+            <span class="compass-clock__second-item" id="second-44" data-value="44">44</span>
+            <span class="compass-clock__second-item" id="second-45" data-value="45">45</span>
+            <span class="compass-clock__second-item" id="second-46" data-value="46">46</span>
+            <span class="compass-clock__second-item" id="second-47" data-value="47">47</span>
+            <span class="compass-clock__second-item" id="second-48" data-value="48">48</span>
+            <span class="compass-clock__second-item" id="second-49" data-value="49">49</span>
+            <span class="compass-clock__second-item" id="second-50" data-value="50">50</span>
+            <span class="compass-clock__second-item" id="second-51" data-value="51">51</span>
+            <span class="compass-clock__second-item" id="second-52" data-value="52">52</span>
+            <span class="compass-clock__second-item" id="second-53" data-value="53">53</span>
+            <span class="compass-clock__second-item" id="second-54" data-value="54">54</span>
+            <span class="compass-clock__second-item" id="second-55" data-value="55">55</span>
+            <span class="compass-clock__second-item" id="second-56" data-value="56">56</span>
+            <span class="compass-clock__second-item" id="second-57" data-value="57">57</span>
+            <span class="compass-clock__second-item" id="second-58" data-value="58">58</span>
+            <span class="compass-clock__second-item" id="second-59" data-value="59">59</span>
+        </div>
+    </div>
+    <script src="./js/timeScript.js" type="text/javascript"></script>
+</body>
+
+</html>

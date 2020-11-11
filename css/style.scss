@@ -1,0 +1,33 @@
+html{
+    font-size: 62.5%;
+    
+}
+.compass-clock{
+    max-width: 76.8rem;
+    max-height: 76.8rem;
+    margin: 0 auto;
+    &__second{
+        background-color: orange;
+        width: 76.8rem;
+        height: 76.8rem;
+        margin: 0 auto;
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    &__second-item{
+        width: 100%;
+        text-align: right;
+        font-size: 2rem;
+        display: block;
+        position: absolute;
+        // transition: 1s; // I add transition in javascript
+    }
+}
+// @for $i from 0 through 59 {
+//     .compass-clock__second #second-#{$i}{
+//         transform: rotate(#{-$i*6}deg);
+//         transform-origin: 50% 0%;
+//         background-color: yellow;
+//     }
+// }

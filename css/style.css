@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+}
+
+.compass-clock {
+  max-width: 76.8rem;
+  max-height: 76.8rem;
+  margin: 0 auto;
+}
+
+.compass-clock__second {
+  background-color: orange;
+  width: 76.8rem;
+  height: 76.8rem;
+  margin: 0 auto;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.compass-clock__second-item {
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+  display: block;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
