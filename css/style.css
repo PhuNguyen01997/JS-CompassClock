@@ -13,8 +13,8 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#15284d), to(rgba(21, 40, 77, 0.8))), url("/img/bg-primary.jpg");
-  background-image: linear-gradient(to right, #15284d, rgba(21, 40, 77, 0.8)), url("/img/bg-primary.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(#15284d), to(rgba(21, 40, 77, 0.8))), url("https://raw.githubusercontent.com/PhuNguyen01997/JS-CompassClock/main/img/bg-primary.jpg");
+  background: linear-gradient(to right, #15284d, rgba(21, 40, 77, 0.8)), url("https://raw.githubusercontent.com/PhuNguyen01997/JS-CompassClock/main/img/bg-primary.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
