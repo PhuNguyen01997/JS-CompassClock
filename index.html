@@ -22,6 +22,13 @@
     <!--Font Answer Icon 5-->
     <script src="https://kit.fontawesome.com/5ca78cb473.js" crossorigin="anonymous"></script>
 
+    <!--Font Lato-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!--Attrchange plugin-->
+    <script src="./js-attrChange/attrchange.js" type="text/javascript"></script>
+    <script src="./js-attrChange/attrchange_ext.js" type="text/javascript"></script>
+
     <title>Compass Clock</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,208 +37,215 @@
 </head>
 
 <body>
-    <div class="compass-clock">
-        <div class="compass-clock__container compass-clock__container--second">
-            <span class="compass-clock__item compass-clock__item--second" id="second-0" data-value="0">0</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-1" data-value="1">1</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-2" data-value="2">2</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-3" data-value="3">3</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-4" data-value="4">4</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-5" data-value="5">5</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-6" data-value="6">6</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-7" data-value="7">7</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-8" data-value="8">8</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-9" data-value="9">9</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-10" data-value="10">10</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-11" data-value="11">11</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-12" data-value="12">12</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-13" data-value="13">13</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-14" data-value="14">14</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-15" data-value="15">15</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-16" data-value="16">16</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-17" data-value="17">17</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-18" data-value="18">18</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-19" data-value="19">19</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-20" data-value="20">20</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-21" data-value="21">21</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-22" data-value="22">22</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-23" data-value="23">23</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-24" data-value="24">24</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-25" data-value="25">25</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-26" data-value="26">26</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-27" data-value="27">27</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-28" data-value="28">28</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-29" data-value="29">29</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-30" data-value="30">30</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-31" data-value="31">31</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-32" data-value="32">32</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-33" data-value="33">33</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-34" data-value="34">34</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-35" data-value="35">35</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-36" data-value="36">36</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-37" data-value="37">37</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-38" data-value="38">38</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-39" data-value="39">39</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-40" data-value="40">40</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-41" data-value="41">41</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-42" data-value="42">42</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-43" data-value="43">43</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-44" data-value="44">44</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-45" data-value="45">45</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-46" data-value="46">46</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-47" data-value="47">47</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-48" data-value="48">48</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-49" data-value="49">49</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-50" data-value="50">50</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-51" data-value="51">51</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-52" data-value="52">52</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-53" data-value="53">53</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-54" data-value="54">54</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-55" data-value="55">55</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-56" data-value="56">56</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-57" data-value="57">57</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-58" data-value="58">58</span>
-            <span class="compass-clock__item compass-clock__item--second" id="second-59" data-value="59">59</span>
-        </div>
-        <div class="compass-clock__container compass-clock__container--minute">
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-0" data-value="0">0</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-1" data-value="1">1</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-2" data-value="2">2</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-3" data-value="3">3</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-4" data-value="4">4</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-5" data-value="5">5</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-6" data-value="6">6</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-7" data-value="7">7</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-8" data-value="8">8</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-9" data-value="9">9</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-10" data-value="10">10</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-11" data-value="11">11</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-12" data-value="12">12</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-13" data-value="13">13</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-14" data-value="14">14</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-15" data-value="15">15</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-16" data-value="16">16</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-17" data-value="17">17</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-18" data-value="18">18</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-19" data-value="19">19</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-20" data-value="20">20</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-21" data-value="21">21</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-22" data-value="22">22</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-23" data-value="23">23</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-24" data-value="24">24</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-25" data-value="25">25</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-26" data-value="26">26</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-27" data-value="27">27</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-28" data-value="28">28</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-29" data-value="29">29</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-30" data-value="30">30</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-31" data-value="31">31</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-32" data-value="32">32</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-33" data-value="33">33</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-34" data-value="34">34</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-35" data-value="35">35</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-36" data-value="36">36</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-37" data-value="37">37</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-38" data-value="38">38</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-39" data-value="39">39</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-40" data-value="40">40</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-41" data-value="41">41</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-42" data-value="42">42</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-43" data-value="43">43</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-44" data-value="44">44</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-45" data-value="45">45</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-46" data-value="46">46</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-47" data-value="47">47</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-48" data-value="48">48</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-49" data-value="49">49</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-50" data-value="50">50</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-51" data-value="51">51</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-52" data-value="52">52</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-53" data-value="53">53</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-54" data-value="54">54</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-55" data-value="55">55</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-56" data-value="56">56</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-57" data-value="57">57</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-58" data-value="58">58</span>
-            <span class="compass-clock__item compass-clock__item--minute" id="minute-59" data-value="59">59</span>
-        </div>
-        <div class="compass-clock__container compass-clock__container--hour">
-            <span class="compass-clock__item compass-clock__item--hour" data-value="0">0</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="1">1</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="2">2</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="3">3</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="4">4</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="5">5</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="6">6</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="7">7</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="8">8</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="9">9</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="10">10</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="11">11</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="12">12</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="13">13</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="14">14</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="15">15</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="16">16</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="17">17</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="18">18</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="19">19</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="20">20</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="21">21</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="22">22</span>
-            <span class="compass-clock__item compass-clock__item--hour" data-value="23">23</span>
-        </div>
-        <div class="compass-clock__container compass-clock__container--day">
-            <span class="compass-clock__item compass-clock__item--day" data-value="1">1</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="2">2</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="3">3</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="4">4</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="5">5</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="6">6</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="7">7</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="8">8</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="9">9</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="10">10</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="11">11</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="12">12</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="13">13</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="14">14</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="15">15</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="16">16</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="17">17</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="18">18</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="19">19</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="20">20</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="21">21</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="22">22</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="23">23</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="24">24</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="25">25</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="26">26</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="27">27</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="28">28</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="29">29</span>
-            <span class="compass-clock__item compass-clock__item--day" data-value="30">30</span>
-        </div>
-        <div class="compass-clock__container compass-clock__container--month">
-            <span class="compass-clock__item compass-clock__item--month" data-value="1">1</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="2">2</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="3">3</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="4">4</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="5">5</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="6">6</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="7">7</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="8">8</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="9">9</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="10">10</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="11">11</span>
-            <span class="compass-clock__item compass-clock__item--month" data-value="12">12</span>
-        </div>
-        <div class="compass-clock__container compass-clock__container--week">
-            <span class="compass-clock__item compass-clock__item--week" data-value="1" >1</span>
-            <span class="compass-clock__item compass-clock__item--week" data-value="2" >2</span>
-            <span class="compass-clock__item compass-clock__item--week" data-value="3" >3</span>
-            <span class="compass-clock__item compass-clock__item--week" data-value="4" >4</span>
+    <div class="wrapper">
+        <div class="compass-clock">
+            <div class="background-color"></div>
+            <div class="compass-clock__container compass-clock__container--second">
+                <span class="compass-clock__item compass-clock__item--second" data-value="0" data-unit="second">00</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="1" data-unit="second">01</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="2" data-unit="second">02</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="3" data-unit="second">03</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="4" data-unit="second">04</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="5" data-unit="second">05</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="6" data-unit="second">06</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="7" data-unit="second">07</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="8" data-unit="second">08</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="9" data-unit="second">09</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="10" data-unit="second">10</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="11" data-unit="second">11</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="12" data-unit="second">12</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="13" data-unit="second">13</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="14" data-unit="second">14</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="15" data-unit="second">15</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="16" data-unit="second">16</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="17" data-unit="second">17</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="18" data-unit="second">18</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="19" data-unit="second">19</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="20" data-unit="second">20</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="21" data-unit="second">21</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="22" data-unit="second">22</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="23" data-unit="second">23</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="24" data-unit="second">24</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="25" data-unit="second">25</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="26" data-unit="second">26</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="27" data-unit="second">27</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="28" data-unit="second">28</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="29" data-unit="second">29</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="30" data-unit="second">30</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="31" data-unit="second">31</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="32" data-unit="second">32</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="33" data-unit="second">33</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="34" data-unit="second">34</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="35" data-unit="second">35</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="36" data-unit="second">36</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="37" data-unit="second">37</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="38" data-unit="second">38</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="39" data-unit="second">39</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="40" data-unit="second">40</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="41" data-unit="second">41</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="42" data-unit="second">42</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="43" data-unit="second">43</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="44" data-unit="second">44</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="45" data-unit="second">45</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="46" data-unit="second">46</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="47" data-unit="second">47</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="48" data-unit="second">48</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="49" data-unit="second">49</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="50" data-unit="second">50</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="51" data-unit="second">51</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="52" data-unit="second">52</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="53" data-unit="second">53</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="54" data-unit="second">54</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="55" data-unit="second">55</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="56" data-unit="second">56</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="57" data-unit="second">57</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="58" data-unit="second">58</span>
+                <span class="compass-clock__item compass-clock__item--second" data-value="59" data-unit="second">59</span>
+            </div>
+            <div class="compass-clock__container compass-clock__container--minute">
+                <span class="compass-clock__item compass-clock__item--minute" data-value="0" data-unit="minute">00</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="1" data-unit="minute">01</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="2" data-unit="minute">02</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="3" data-unit="minute">03</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="4" data-unit="minute">04</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="5" data-unit="minute">05</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="6" data-unit="minute">06</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="7" data-unit="minute">07</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="8" data-unit="minute">08</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="9" data-unit="minute">09</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="10" data-unit="minute">10</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="11" data-unit="minute">11</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="12" data-unit="minute">12</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="13" data-unit="minute">13</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="14" data-unit="minute">14</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="15" data-unit="minute">15</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="16" data-unit="minute">16</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="17" data-unit="minute">17</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="18" data-unit="minute">18</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="19" data-unit="minute">19</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="20" data-unit="minute">20</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="21" data-unit="minute">21</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="22" data-unit="minute">22</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="23" data-unit="minute">23</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="24" data-unit="minute">24</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="25" data-unit="minute">25</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="26" data-unit="minute">26</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="27" data-unit="minute">27</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="28" data-unit="minute">28</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="29" data-unit="minute">29</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="30" data-unit="minute">30</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="31" data-unit="minute">31</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="32" data-unit="minute">32</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="33" data-unit="minute">33</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="34" data-unit="minute">34</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="35" data-unit="minute">35</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="36" data-unit="minute">36</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="37" data-unit="minute">37</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="38" data-unit="minute">38</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="39" data-unit="minute">39</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="40" data-unit="minute">40</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="41" data-unit="minute">41</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="42" data-unit="minute">42</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="43" data-unit="minute">43</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="44" data-unit="minute">44</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="45" data-unit="minute">45</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="46" data-unit="minute">46</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="47" data-unit="minute">47</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="48" data-unit="minute">48</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="49" data-unit="minute">49</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="50" data-unit="minute">50</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="51" data-unit="minute">51</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="52" data-unit="minute">52</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="53" data-unit="minute">53</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="54" data-unit="minute">54</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="55" data-unit="minute">55</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="56" data-unit="minute">56</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="57" data-unit="minute">57</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="58" data-unit="minute">58</span>
+                <span class="compass-clock__item compass-clock__item--minute" data-value="59" data-unit="minute">59</span>
+            </div>
+            <div class="compass-clock__container compass-clock__container--hour">
+                <span class="compass-clock__item compass-clock__item--hour" data-value="0" data-unit="hour">00</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="1" data-unit="hour">01</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="2" data-unit="hour">02</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="3" data-unit="hour">03</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="4" data-unit="hour">04</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="5" data-unit="hour">05</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="6" data-unit="hour">06</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="7" data-unit="hour">07</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="8" data-unit="hour">08</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="9" data-unit="hour">09</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="10" data-unit="hour">10</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="11" data-unit="hour">11</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="12" data-unit="hour">12</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="13" data-unit="hour">13</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="14" data-unit="hour">14</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="15" data-unit="hour">15</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="16" data-unit="hour">16</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="17" data-unit="hour">17</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="18" data-unit="hour">18</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="19" data-unit="hour">19</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="20" data-unit="hour">20</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="21" data-unit="hour">21</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="22" data-unit="hour">22</span>
+                <span class="compass-clock__item compass-clock__item--hour" data-value="23" data-unit="hour">23</span>
+            </div>
+            <div class="compass-clock__container compass-clock__container--day">
+                <span class="compass-clock__item compass-clock__item--day" data-value="1" data-unit="day">01</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="2" data-unit="day">02</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="3" data-unit="day">03</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="4" data-unit="day">04</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="5" data-unit="day">05</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="6" data-unit="day">06</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="7" data-unit="day">07</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="8" data-unit="day">08</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="9" data-unit="day">09</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="10" data-unit="day">10</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="11" data-unit="day">11</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="12" data-unit="day">12</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="13" data-unit="day">13</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="14" data-unit="day">14</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="15" data-unit="day">15</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="16" data-unit="day">16</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="17" data-unit="day">17</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="18" data-unit="day">18</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="19" data-unit="day">19</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="20" data-unit="day">20</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="21" data-unit="day">21</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="22" data-unit="day">22</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="23" data-unit="day">23</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="24" data-unit="day">24</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="25" data-unit="day">25</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="26" data-unit="day">26</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="27" data-unit="day">27</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="28" data-unit="day">28</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="29" data-unit="day">29</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="30" data-unit="day">30</span>
+                <span class="compass-clock__item compass-clock__item--day" data-value="31" data-unit="day">31</span>
+            </div>
+            <div class="compass-clock__container compass-clock__container--month">
+                <span class="compass-clock__item compass-clock__item--month" data-value="1" data-unit="month">01</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="2" data-unit="month">02</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="3" data-unit="month">03</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="4" data-unit="month">04</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="5" data-unit="month">05</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="6" data-unit="month">06</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="7" data-unit="month">07</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="8" data-unit="month">08</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="9" data-unit="month">09</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="10" data-unit="month">10</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="11" data-unit="month">11</span>
+                <span class="compass-clock__item compass-clock__item--month" data-value="12" data-unit="month">12</span>
+            </div>
+            <div class="compass-clock__container compass-clock__container--dayWeek">
+                <span class="compass-clock__item compass-clock__item--dayWeek" data-value="0" data-unit="dayWeek">Sunday</span>
+                <span class="compass-clock__item compass-clock__item--dayWeek" data-value="1" data-unit="dayWeek">Monday</span>
+                <span class="compass-clock__item compass-clock__item--dayWeek" data-value="2" data-unit="dayWeek">Tuesday</span>
+                <span class="compass-clock__item compass-clock__item--dayWeek" data-value="3" data-unit="dayWeek">Wednesday</span>
+                <span class="compass-clock__item compass-clock__item--dayWeek" data-value="4" data-unit="dayWeek">Thurday</span>
+                <span class="compass-clock__item compass-clock__item--dayWeek" data-value="5" data-unit="dayWeek">Friday</span>
+                <span class="compass-clock__item compass-clock__item--dayWeek" data-value="6" data-unit="dayWeek">Saturday</span>
+            </div>
         </div>
     </div>
     <script src="./js/timeScript.js" type="text/javascript"></script>

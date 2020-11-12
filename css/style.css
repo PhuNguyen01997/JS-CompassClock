@@ -1,5 +1,34 @@
 html {
   font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  z-index: 1;
+  position: relative;
+}
+
+.wrapper:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#15284d), to(rgba(21, 40, 77, 0.8))), url("/img/bg-primary.jpg");
+  background-image: linear-gradient(to right, #15284d, rgba(21, 40, 77, 0.8)), url("/img/bg-primary.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.background-color {
+  width: 50%;
+  height: 4rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: black;
+  border-radius: 2rem;
+  z-index: 2;
+  opacity: 0.4;
 }
 
 .compass-clock {
@@ -9,6 +38,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -20,6 +53,7 @@ html {
 }
 
 .compass-clock__container {
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,34 +64,45 @@ html {
   position: absolute;
 }
 
+.compass-clock__container > span:not(.active)::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: inherit;
+  right: -0.5rem;
+}
+
 .compass-clock__container--second {
-  width: 76.8rem;
-  height: 76.8rem;
+  width: 70rem;
+  height: 70rem;
 }
 
 .compass-clock__container--minute {
-  width: 71rem;
-  height: 71rem;
+  width: 57rem;
+  height: 57rem;
 }
 
 .compass-clock__container--hour {
-  width: 65rem;
-  height: 65rem;
-}
-
-.compass-clock__container--day {
-  width: 60rem;
-  height: 60rem;
+  width: 47rem;
+  height: 47rem;
 }
 
 .compass-clock__container--month {
-  width: 55rem;
-  height: 55rem;
+  width: 40rem;
+  height: 40rem;
 }
 
-.compass-clock__container--week {
-  width: 50rem;
-  height: 50rem;
+.compass-clock__container--day {
+  width: 33rem;
+  height: 33rem;
+}
+
+.compass-clock__container--dayWeek {
+  width: 26rem;
+  height: 26rem;
 }
 
 .compass-clock__item {
@@ -66,5 +111,69 @@ html {
   display: block;
   position: absolute;
   width: 100%;
+}
+
+.compass-clock__item--second {
+  color: orange;
+}
+
+.compass-clock__item--minute {
+  color: #fbff12;
+}
+
+.compass-clock__item--hour {
+  color: #a4ff12;
+}
+
+.compass-clock__item--day {
+  color: #12d4ff;
+}
+
+.compass-clock__item--month {
+  color: #12ffe7;
+}
+
+.compass-clock__item--dayWeek {
+  color: #ae52ff;
+}
+
+.compass-clock .active {
+  font-weight: bolder;
+  color: white;
+  position: relative;
+}
+
+.compass-clock .active:before {
+  position: absolute;
+  left: calc(100% + 0.5rem);
+  font-weight: normal;
+}
+
+.compass-clock .active--second:before {
+  content: "sec";
+}
+
+.compass-clock .active--minute:before {
+  content: "min";
+}
+
+.compass-clock .active--hour:before {
+  content: "hr";
+}
+
+.compass-clock .active--day:before {
+  content: "";
+  left: auto;
+  right: 2.2rem;
+}
+
+.compass-clock .active--month:before {
+  content: "/";
+  left: auto;
+  right: 2.5rem;
+}
+
+.compass-clock .active--dayWeek:before {
+  content: "";
 }
 /*# sourceMappingURL=style.css.map */

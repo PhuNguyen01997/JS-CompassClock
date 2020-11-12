@@ -1,45 +1,82 @@
 html{
     font-size: 62.5%;
-    
+    font-family: 'Lato', sans-serif;
+}
+body{
+    // background-color: red;
+}
+.wrapper{
+    z-index: 1;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, rgba(21, 40, 77, 1), rgba(21, 40, 77, 0.8)), url("/img/bg-primary.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.background-color{
+    width: 50%;
+    height: 4rem;
+    align-self: flex-end;
+    background-color: black;
+    border-radius: 2rem;
+    z-index: 2;
+    opacity: 0.4;
 }
 .compass-clock{
     max-width: 76.8rem;
     max-height: 76.8rem;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 76.8rem;
     height: 76.8rem;
     &__container{
+        z-index: 3;
         display: flex;
         align-items: center;
         margin: 0 auto;
         position: absolute;
-        // background-color: orange;
+        > span:not(.active)::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: inherit;
+            right: -0.5rem;
+        }
         &--second{
-            width: 76.8rem;
-            height: 76.8rem;
+            width: 70rem;
+            height: 70rem;
         } 
         &--minute{
-            width: 71rem;
-            height: 71rem;
+            width: 57rem;
+            height: 57rem;
         }
         &--hour{
-            width: 65rem;
-            height: 65rem;
-        }
-        &--day{
-            width: 60rem;
-            height: 60rem;
+            width: 47rem;
+            height: 47rem;
         }
         &--month{
-            width: 55rem;
-            height: 55rem ;
+            width: 40rem;
+            height: 40rem;
         }
-        &--week{
-            width: 50rem;
-            height: 50rem;
+        &--day{
+            width: 33rem;
+            height: 33rem;
+        }
+        &--dayWeek{
+            width: 26rem;
+            height: 26rem;
         }
     }
     &__item{
@@ -49,6 +86,56 @@ html{
         position: absolute;
         width: 100%;
         // transition: 1s; // I add transition in javascript
+        &--second{
+            color: orange;
+        }
+        &--minute{
+            color: rgb(251, 255, 18);
+        }
+        &--hour{
+            color: rgb(164, 255, 18);
+        }
+        &--day{
+            color: rgb(18, 212, 255);
+        }
+        &--month{
+            color: rgb(18, 255, 231);
+        }
+        &--dayWeek{
+            color: rgb(174, 82, 255);
+        }
+    }
+    .active{
+        font-weight: bolder;
+        color: white;
+        position: relative;
+        &:before{
+            position: absolute;
+            left: calc(100% + 0.5rem);
+            font-weight: normal;
+        }
+        &--second:before{
+            content: "sec";
+        }
+        &--minute:before{
+            content: "min";
+        }
+        &--hour:before{
+            content: "hr";
+        }
+        &--day:before{
+            content: "";
+            left: auto;
+            right: 2.2rem;
+        }
+        &--month:before{
+            content: "/";
+            left: auto;
+            right: 2.5rem;
+        }
+        &--dayWeek:before{
+            content: "";
+        }
     }
 }
 // @for $i from 0 through 59 {

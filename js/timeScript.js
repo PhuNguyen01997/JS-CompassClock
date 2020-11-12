@@ -5,22 +5,59 @@ $(document).ready(function () {
     const hourSpan = $(".compass-clock__item--hour");
     const daySpan = $(".compass-clock__item--day");
     const monthSpan = $(".compass-clock__item--month");
-    const weekSpan = $(".compass-clock__item--week");
-    set60(secSpan, date.getSeconds());
-    set60(minSpan, date.getMinutes()); // Because both second and minute have 60 number, so i use one function
-    set24(hourSpan, date.getHours());
-    set30(daySpan, date.getDate());
-    set12(monthSpan, date.getMonth() + 1);
-    set4(weekSpan, getWeek(date));
+    const dayWeekSpan = $(".compass-clock__item--dayWeek");
+    // const nameList = ["sec",];
+
+    setAngle(secSpan, date.getSeconds(), 60); // include 60 second
+    setAngle(minSpan, date.getMinutes(), 60); // include 60 minute
+    setAngle(hourSpan, date.getHours(), 24); // include 24 hour
+    setAngle(daySpan, date.getDate(), 31); // include 31 day
+    setAngle(monthSpan, date.getMonth() + 1, 12); // include 12 month
+    setAngle(dayWeekSpan, date.getDay(), 7); // include 7 dayWeek
+
+    // Nếu thêm transition ngay từ đầu thì vừa load trang xong sẽ bu từ 1 cục r tản ra
+    // After set correct position, set transition
+    // Có thể sử dụng promise mà k cần sử dụng setTimeout, mục đích chính là sau khi sét giờ xong thì nhét transition vào
+    setTimeout(() => {
+        setTransition(secSpan);
+        setTransition(minSpan);
+        setTransition(hourSpan);
+        setTransition(daySpan);
+        setTransition(monthSpan);
+        setTransition(dayWeekSpan);
+    }, 500);
+
     const eachSecond = setInterval(() => {
         date = new Date();
-        incre60(secSpan, date.getSeconds());
-        incre60(minSpan, date.getMinutes());
-        incre24(hourSpan, date.getHours());
-        incre30(daySpan, date.getDate());
-        incre12(monthSpan, date.getMonth() + 1);
-        incre4(weekSpan, getWeek(date));
+        setAngle(secSpan, date.getSeconds(), 60); // include 60s
+        setAngle(minSpan, date.getMinutes(), 60); // include 60 minute
     }, 1000);
+
+    // When style of minuteSpan change
+    $(minSpan[0]).attrchange({
+        trackValues: true, // set to true so that the event object is updated with old & new values
+        callback: function (e) {
+            if (e.attributeName == "style") {
+                date = new Date();
+                setAngle(hourSpan, date.getHours(), 24); // include 24 hour
+                console.log("Trigger minute is changed");
+            }
+        }
+    });
+
+    // When style of hourSpan change
+    $(hourSpan[0]).attrchange({
+        trackValues: true, // set to true so that the event object is updated with old & new values
+        callback: function (e) {
+            if (e.attributeName == "style") {
+                date = new Date();
+                setAngle(daySpan, date.getDate(), 31); // include 31 day
+                setAngle(monthSpan, date.getMonth() + 1, 12); // include 12 month
+                setAngle(dayWeekSpan, date.getDay(), 7); // include 7 dayWeek
+                console.log("Trigger hour is changed");
+            }
+        }
+    });
 });
 
 function setTransition(nodeList) {
@@ -29,103 +66,21 @@ function setTransition(nodeList) {
     });
 }
 
-function set60(nodeList, second) {
+function setAngle(nodeList, valueNow, amount) {
     $.each(nodeList, function (index, elem) {
         let deg = parseInt(elem.dataset.value);
-        deg = (second - deg) * 6; // (360 / 60)
+        deg = (valueNow - deg) * (360 / amount);
         $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
 
-    // Nếu thêm transition ngay từ đầu thì vừa load trang xong sẽ bu từ 1 cục r tản ra
-    // After set correct position, set transition
-    // Có thể sử dụng promise mà k cần sử dụng setTimeout, mục đích chính là sau khi sét giờ xong thì nhét transition vào
-    setTimeout(() => {
-        setTransition(nodeList);
-    }, 500);
-
-}
-
-function incre60(nodeList, second) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (second - deg) * 6; // (360 / 60)
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-}
-
-function set24(nodeList, hour) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (hour - deg) * 15; // (360 / 24);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-
-    setTimeout(() => {
-        setTransition(nodeList);
-    }, 500);
-}
-
-function incre24(nodeList, hour) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (hour - deg) * 15; // (360 / 24);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-}
-
-function set30(nodeList, day) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (day - deg) * 12; // (360 / 30);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-
-    setTimeout(() => {
-        setTransition(nodeList);
-    }, 500);
-}
-
-function incre30(nodeList, day) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (day - deg) * 12; // (360 / 30);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-}
-
-function set12(nodeList, month) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (month - deg) * 30; // (360 / 12);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-
-    setTimeout(() => {
-        setTransition(nodeList);
-    }, 500);
-}
-
-function incre12(nodeList, month) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (month - deg) * 30; // (360 / 12);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-}
-
-function set4(nodeList, week) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (week - deg) * 30; // (360 / 12);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
-    });
-}
-
-function incre4(nodeList, week) {
-    $.each(nodeList, function (index, elem) {
-        let deg = parseInt(elem.dataset.value);
-        deg = (week - deg) * 30; // (360 / 12);
-        $(elem).css("transform", "rotate(" + deg + "deg)");
+        // Add active class to the now Time
+        const unit = elem.dataset.unit;
+        const name = "active--" + unit;
+        elem.classList.remove("active");
+        elem.classList.remove(name);
+        if (deg === 0) {
+            elem.classList.add("active");
+            elem.classList.add(name);
+        }
     });
 }
 
