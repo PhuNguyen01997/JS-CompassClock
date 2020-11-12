@@ -46,18 +46,9 @@ html {
 }
 
 .compass-clock__container--day {
-  width: 60rem;
-  height: 60rem;
-}
-
-.compass-clock__container--month {
-  width: 55rem;
-  height: 55rem;
-}
-
-.compass-clock__container--week {
-  width: 50rem;
-  height: 50rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: aqua;
 }
 
 .compass-clock__item {
@@ -67,4 +58,8 @@ html {
   position: absolute;
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+
+.compass-clock__item--second {
+  width: 100%;
+}
+/*# sourceMappingURL=style2.css.map */

@@ -28,7 +28,18 @@ html{
         &--hour{
             width: 65rem;
             height: 65rem;
-            background-color: aqua;
+        }
+        &--day{
+            width: 60rem;
+            height: 60rem;
+        }
+        &--month{
+            width: 55rem;
+            height: 55rem ;
+        }
+        &--week{
+            width: 50rem;
+            height: 50rem;
         }
     }
     &__item{
@@ -38,9 +49,6 @@ html{
         position: absolute;
         width: 100%;
         // transition: 1s; // I add transition in javascript
-        &--second{
-            width: 100%;
-        }
     }
 }
 // @for $i from 0 through 59 {

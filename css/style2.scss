@@ -1,0 +1,55 @@
+html{
+    font-size: 62.5%;
+    
+}
+.compass-clock{
+    max-width: 76.8rem;
+    max-height: 76.8rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76.8rem;
+    height: 76.8rem;
+    &__container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        position: absolute;
+        &--second{
+            width: 76.8rem;
+            height: 76.8rem;
+        } 
+        &--minute{
+            width: 71rem;
+            height: 71rem;
+        }
+        &--hour{
+            width: 65rem;
+            height: 65rem;
+        }
+        &--day{
+            width: 6rem;
+            height: 6rem;
+            background-color: aqua;
+        }
+    }
+    &__item{
+        text-align: right;
+        font-size: 2rem;
+        display: block;
+        position: absolute;
+        width: 100%;
+        // transition: 1s; // I add transition in javascript
+        &--second{
+            width: 100%;
+        }
+    }
+}
+// @for $i from 0 through 59 {
+//     .compass-clock__second #second-#{$i}{
+//         transform: rotate(#{-$i*6}deg);
+//         transform-origin: 50% 0%;
+//         background-color: yellow;
+//     }
+// }
